@@ -1,4 +1,4 @@
-module swagger-merger
+module github.com/JackBee2912/swagger-merger
 
 go 1.23.2
 
