@@ -7,7 +7,7 @@ A powerful CLI tool and Go library for merging multiple Swagger/OpenAPI files in
 - **Multi-format Support**: Merge Swagger 2.0 and OpenAPI 3.0 files
 - **Flexible Input**: Support for individual files, directories, and URL-based swagger files
 - **Custom Server Configuration**: Override server URLs and descriptions
-- **Cross-platform**: Available for Linux, macOS, and Windows
+- **Cross-platform**: Available for Linux, macOS
 - **Verbose Output**: Detailed logging for debugging
 
 ## 📦 Installation
@@ -27,8 +27,6 @@ wget https://github.com/JackBee2912/swagger-merger/releases/latest/download/swag
 chmod +x swagger-merger-darwin-amd64
 sudo mv swagger-merger-darwin-amd64 /usr/local/bin/swagger-merger
 
-# Windows
-# Download swagger-merger-windows-amd64.exe and add to PATH
 ```
 
 ### Option 2: Build from Source
