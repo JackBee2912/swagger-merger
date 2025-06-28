@@ -8,8 +8,6 @@ A powerful CLI tool and Go library for merging multiple Swagger/OpenAPI files in
 - **Flexible Input**: Support for individual files, directories, and URL-based swagger files
 - **Custom Server Configuration**: Override server URLs and descriptions
 - **Cross-platform**: Available for Linux, macOS, and Windows
-- **Docker Support**: Containerized for easy CI/CD integration
-- **Statistics**: Get detailed statistics about merged files
 - **Verbose Output**: Detailed logging for debugging
 
 ## 📦 Installation
