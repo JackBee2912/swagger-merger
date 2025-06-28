@@ -53,16 +53,6 @@ make install
 go install github.com/JackBee2912/swagger-merger/cmd/swagger-merger@latest
 ```
 
-### Option 4: Using Docker
-
-```bash
-# Pull the image
-docker pull JackBee2912/swagger-merger:latest
-
-# Run the tool
-docker run --rm -v $(pwd):/workspace JackBee2912/swagger-merger:latest --help
-```
-
 ## 🎯 Quick Start
 
 ### Basic Usage
@@ -218,27 +208,6 @@ func main() {
     }
 }
 ```
-
-## 🐳 Docker Usage
-
-### Basic Docker Command
-
-```bash
-docker run --rm -v $(pwd):/workspace JackBee2912/swagger-merger:latest \
-  --input /workspace/docs \
-  --output /workspace/merged.yaml
-```
-
-### Docker with Custom Servers
-
-```bash
-docker run --rm -v $(pwd):/workspace JackBee2912/swagger-merger:latest \
-  --input /workspace/docs \
-  --output /workspace/merged.yaml \
-  --servers "https://api-dev.com:Development,https://api.com:Production" \
-  --verbose --stats
-```
-
 <!-- 
 ## 🔄 CI/CD Integration
 
