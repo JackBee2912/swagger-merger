@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"swagger-merger/pkg/merger"
+	"github.com/JackBee2912/swagger-merger/pkg/merger"
 )
 
 func main() {
