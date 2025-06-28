@@ -239,23 +239,7 @@ docker run --rm -v $(pwd):/workspace JackBee2912/swagger-merger:latest \
   --verbose --stats
 ```
 
-### Docker Compose Example
-
-```yaml
-version: '3.8'
-services:
-  swagger-merger:
-    image: JackBee2912/swagger-merger:latest
-    volumes:
-      - ./docs:/workspace/docs
-      - ./output:/workspace/output
-    command: >
-      --input /workspace/docs
-      --output /workspace/output/merged.yaml
-      --servers "https://api-dev.com:Development,https://api.com:Production"
-      --verbose --stats
-```
-
+<!-- 
 ## 🔄 CI/CD Integration
 
 ### GitHub Actions
@@ -290,53 +274,7 @@ jobs:
       with:
         name: merged-swagger
         path: merged-swagger.yaml
-```
-
-### GitLab CI
-
-```yaml
-merge_swagger:
-  image: JackBee2912/swagger-merger:latest
-  script:
-    - swagger-merger \
-        --input /workspace/docs \
-        --output /workspace/merged-swagger.yaml \
-        --servers "https://api-dev.com:Development,https://api.com:Production" \
-        --verbose --stats
-  artifacts:
-    paths:
-      - merged-swagger.yaml
-```
-
-### Jenkins Pipeline
-
-```groovy
-pipeline {
-    agent any
-    
-    stages {
-        stage('Merge Swagger') {
-            steps {
-                sh '''
-                    wget https://github.com/JackBee2912/swagger-merger/releases/latest/download/swagger-merger-linux-amd64
-                    chmod +x swagger-merger-linux-amd64
-                    ./swagger-merger-linux-amd64 \\
-                        --input ./docs \\
-                        --output ./merged-swagger.yaml \\
-                        --servers "https://api-dev.com:Development,https://api.com:Production" \\
-                        --verbose --stats
-                '''
-            }
-        }
-    }
-    
-    post {
-        always {
-            archiveArtifacts artifacts: 'merged-swagger.yaml', fingerprint: true
-        }
-    }
-}
-```
+``` -->
 
 ## 📊 Output Statistics
 
